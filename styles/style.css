@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* glg font*/
+
+  *,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*body section starts*/
+  #body-section{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: inter;
+  }
+
+
+  /*banner-container */
+  .banner-container{
+    max-width: 80%;
+    margin: auto;
+  }
+  /*body section end*/
+/*Header section start*/
+
+#navber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 15px;
+  }
+
+  #navber h2{
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+  }
+
+  #navber ul {
+    display: flex;
+  } 
+
+  #navber ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #navber ul li:nth-child(1){
+    margin-left: 0px;
+    border-radius: 46px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(230, 83, 60);
+  }
+  #navber ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+/* bars humbergur desktop responsive*/
+@media screen and (min-width: 576px){
+    #navber ul li:last-child{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    #navber ul li:last-child{
+        display: block;
+        margin: 0 10px 0 0;
+        padding: 0;
+    }
+}
+
+/* header section responsive */
+@media screen and (max-width: 576px){
+    .banner-container{
+        max-width: 100%;
+    }
+    #navber{
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #navber ul li{
+        display: none;
+    }
+
+    #navber h2{
+        font-size: 30px;
+    } 
+}  
+/* header section end*/
+  /*header section start*/
+  .banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 32px;
+  }
+  .banner-content{
+    width: 45%;
+  }
+  .banner-text-container h1{
+    font-size: 150px;
+    line-height: 120%;
+    margin-bottom:20px ;
+  }
+  span{
+    font-family: 'Miama', sans-serif;
+  }
+        
+  
+  .banner-text-container p{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+}
+
+.banner-content button{
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    width: 150px;
+    height: 54px;
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.banner-content button:last-child{
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 0;
+}
+.banner-image{
+    width: 35%;
+    height: 550px;
+    position: relative;
+}
+
+.banner-image .image-box{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image .image-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image .box{
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.banner-image .box1 h2{
+    font-size: 35px;
+}
+.banner-image .box2 h2{
+    font-size: 24px;
+}
+.banner-image .box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
+.banner-image .box1{
+    top: 124px;
+    right: 0;
+}
+
+.banner-image .box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 76%;
+    left: 0px;
+}
+
+.banner-image .box2 .box-icon i{
+    margin-right: 10px;
+    font-size: 25px;
+    color: rgb(230, 83, 60);
+}
+
+/* Responsive banner section */
+@media screen and (max-width: 576px){
+    .banner-section{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .banner-content{
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .banner-text-container h2{
+        font-size: 36px;
+        line-height: 120%;
+        margin-bottom: 15px;
+    }
+    
+    .banner-content button{
+        border-radius: 42px;
+        background-color: rgb(230, 83, 60);
+        width: 150px;
+        height: 40px;
+        font-family: inter;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: 6px;
+    }
+    .btn-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* banner image responsive */
+    .banner-image{
+        width: 100%;
+        height: 500px;
+        margin-top: 35px;
+    }
+
+    .banner-image .image-box{
+        width: 100%;
+        height: 100%;
+    
+    } 
+    .banner-image .box1{
+        top: 15%;
+        right: 3%;
+    }
+    .banner-image .box1 h2{
+        font-size: 30px;
+    }
+    .banner-image .box p{
+        font-size: 10px;
+    }
+    .banner-image .box2{
+        left: 3%;
+        bottom: 10%;
+    }
+}
+/*main section staet*/
+.change-the-habits-container{
+    width: 1044px;
+    margin : 100px auto;
+}
+
+.habits-content{
+    width: 670px;
+    text-align:center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.habits-content h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+
+.habits-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color:  rgba(255, 255, 255, 0.5);
+    margin-bottom: 54px;
+}
+/* cards design */
+.habits-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    text-align: center;
+    width: 231px;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    border: 0.5px solid rgb(255, 255, 255); 
+}
+
+.card-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255); 
+    margin-bottom: 6px;
+}
+
+.card-text p{
+    font-size: 14px;
+    color:  rgba(255, 255, 255, 0.5);
+}
+
+/* responsive the change habits section */
+@media screen and (max-width: 576px){
+    .change-the-habits-container{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .card {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .card-container{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .habits-content{    
+        width: 100%;
+        text-align:center;
+        margin: 0 auto;
+    }
+    .habits-content h2{
+        font-size: 32px;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+    }
+    .habits-content p{
+        font-size: 14px;
+        font-weight: 400;
+        color:  rgba(255, 255, 255, 0.5);
+        margin-bottom: 0px;
+    }
+
+    /* card */
+    .habits-cards{
+        flex-direction: column;
+    }
+
+    .card img{
+        width: 150px;
+        height: 150px;
+    }
+    .card img{
+        margin-bottom: 20px;
+    }
+    
+}
+/* main section > change-the-habits section end */
+
+/* join team design starts here */
+.join-team{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    padding: 30px 60px;
+    border-radius: 18px;
+}
+.join-team-content{
+    max-width: 443px;
+
+}
+.join-team-content h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+
+.join-team-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+    line-height: 24px;
+}
+
+.join-team-content button{
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    width: 224px;
+    height: 54px;
+    font-family: inter;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;  
+}
+.join-team-image{
+    max-width: 366px;
+    max-height: 312px;
+}
+
+.join-team-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+/* Join Team section Responsive  */
+@media screen and (max-width: 576px){
+    .join-team{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .join-team-content h2{
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .join-team-content .btn{
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    .join-team-content p{
+        margin-bottom: 30px;
+    }
+}
+/* join team design end*/
+* BMI Calculator design starts here */
+.bmi-content{
+    width: 671px;
+    margin: 0 auto;
+}
+
+.mbi-calculator{
+    width: 100%;
+    height: auto;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    padding: 52px 0;
+    
+}
+/* calculator chart */
+.calculator-chart{
+    width: 443px;
+}
+.calculator-chart h2{
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+.calculator-chart table, tr, th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 10px 15px;
+    width: 350px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+/* your bmi calculator */
+.calculator .mbi-content{
+    width: 671px;
+    margin: 0px auto 88px auto;
+}
+
+.mbi-content h2{
+    font-size: 48px;
+    font-weight: 900;
+    color:rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+.mbi-content p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.your-bmi-calculator{
+    width: 577px;
+}
+.your-bmi-calc-content{
+    margin-bottom: 30px;
+}
+.your-bmi-calculator h2{
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+.your-bmi-calculator p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* bmi form */
+.your-bmi-calculator form{
+    width: 100%;
+}
+.your-bmi-calculator form .input-box1{
+    display: flex;
+    justify-content: space-between;
+}
+.your-bmi-calculator form input,
+.your-bmi-calculator form select{
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+}
+.your-bmi-calculator form .input-box1 input{
+   width: 49%;
+}
+
+.your-bmi-calculator form select option{
+    color: #333;
+}
+
+form .input-box2{
+    display: flex;
+    justify-content: space-between;
+}
+form .input-box2 input,
+form .input-box2 select{
+    width: 49%;
+} 
+
+form select[id="activity"]{
+    width: 100%;
+}
+
+form input[type="submit"]{
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    width: 224px;
+    height: 54px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+    margin-top: 25px;
+}
+/* Responsive The Calculator Section */
+@media screen and (max-width: 576px){
+    .calculator .mbi-content{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 32px;
+    }
+    .calculator .mbi-content h2{
+        font-size: 32px;
+    }
+
+    .mbi-calculator{
+        flex-direction: column;
+    }
+    /* calculator chart */
+    .calculator-chart{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .calculator-chart h2{
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 23px;
+    }
+    .calculator-chart table, tr{
+        width: 100%;
+    }
+    .your-bmi-calculator{
+        width: 100%;
+        padding: 0px 15px;
+        margin-top: 42px;
+    }
+    .your-bmi-calculator h2{
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 23px;
+        margin-bottom: 14px;
+    }
+    
+}
+/* BMI Calculator design ends here */
+
+/* Team Section Start */
+
+.team-heading{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team-heading-1{
+  color: #FFFFFF;
+}
+
+.team-description{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.all-trainer{
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-between;   
+  background-color: #333333;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+   margin-left: 10%; 
+   margin-right: 10%;
+   margin-top: 5%; 
+  
+   border-radius: 10px;
+  
+}
+.team-member1{
+  /* text-align: center; */
+   width: 32%;
+   margin-bottom: 20px; 
+  border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+     
+  
+}
+.team-member2{
+  /* text-align: center; */
+   width: 32%;
+   margin-bottom: 20px; 
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 8px; 
+ 
+     
+  
+}
+.team-member3{
+  /* text-align: center; */
+   width: 32%;
+    margin-bottom: 20px;  
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 10px;
+
+  
+}
+.team-member4{
+  /* text-align: center; */
+   width: 32%;
+   margin-bottom: 20px; 
+  border-radius: 10px;
+   /* padding-top: 10px; */
+   padding-left: 10px;
+
+}
+.team-member5{
+  /* text-align: center; */
+   width: 32%;
+   margin-bottom: 20px; 
+  border-radius: 10px;
+  /* padding-top: 10px; */
+  padding-left: 8px; 
+  
+}
+.team-member6{
+  /* text-align: center; */
+   width: 32%;
+   margin-bottom: 20px; 
+  border-radius: 10px;
+   padding-right: 10px;
+   padding-left: 8px;
+   
+  /* background-color: #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   */
+}
+ .trainer-img{
+   width: 100%; 
+  height: 250px;
+  border-radius: 10px;
+ /* margin-left: 45%; */
+
+} 
+
+.name{
+  color: #FFFFFF;
+   position: relative;
+  top: -25%; 
+  font-size: 10px;
+  margin: 10px 0 5px;
+ 
+}
+.trainer{
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: -25%; 
+  font-size: 14px;
+  margin: 0; 
+}
+/*team sec end*/
+@media screen and (max-width: 576){
+    .team-section{
+        flex-direction: column;
+    }
+    .all-trainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center; 
+        padding-left: 14%;
+        padding-right: 10%;
+        
+    }
+    .team-member1,
+     .team-member2, 
+     .team-member3, 
+     .team-member4,
+      .team-member5, 
+      .team-member6{
+  width: 80%;  
+}
+}
+/* Footer design section starts here */
+#my-footer-section{
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 100%;
+    margin-top: 88px;
+    padding-bottom: 66px;
+}
+
+.footer-text-container{
+    width: 1060px;
+    margin: 0 auto;
+    padding: 66px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-brand-content{
+    width:50%;
+}
+
+.footer-brand-content h2{
+    font-size: 70px;
+    font-weight: 900;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+.footer-brand-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.get-start-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.get-start-box h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+
+.get-start-box ul li{
+    list-style: none;
+    font-size: 23px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px; 
+}
+.get-start-box ul li:last-child{
+    margin-bottom: 0;
+}
+.copy-right{
+    width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copy-right .drowline{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 36px;
+}
+.copy-right p{
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Responsive Footer section */
+@media screen and (max-width: 576px){
+    .footer-text-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        padding: 60px 15px;
+    }
+
+    .footer-brand-content{
+        width:100%;
+    }
+    .get-start-container{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .get-start-box{
+        width: 100%;
+    }
+    .get-start-box h3{
+        margin: 24px 0px;
+    }
+    .get-start-box ul li{
+        margin-bottom: 10px;
+    }
+    /* copy right */
+    .copy-right{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+/* Footer design section end */
